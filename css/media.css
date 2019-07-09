@@ -12,6 +12,12 @@
 	}
 	.header-box h1 , .header-box p{
 		margin: 15px;
+		
+	}
+	.header-box h1{
 		font-size: 13vw;
+	}
+	.header-box p{
+		font-size: 9vw;
 	}
 }
