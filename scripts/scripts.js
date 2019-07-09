@@ -6,7 +6,14 @@ var lowStick = document.querySelector('.low-stick')
 
 btnMenu.onclick = function(){
 	menu.classList.toggle('active-menu')
+	this.classList.toggle('down-close')
 	topStick.classList.toggle('close-top')
 	midStick.classList.toggle('close-mid')
 	lowStick.classList.toggle('close-low')
 }
+// window.onclick = function(){
+// 	menu.classList.remove('active-menu')
+// 	topStick.classList.remove('close-top')
+// 	midStick.classList.remove('close-mid')
+// 	lowStick.classList.remove('close-low')
+// }
