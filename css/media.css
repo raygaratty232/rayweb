@@ -1,5 +1,17 @@
-@media screen and (max-width: 876px){
+@media screen and (max-width: 730px){
 	.header-box{
 		width: 80%;
+	}
+}
+@media screen and (max-width: 490px){
+	.header-box{
+		width: 80%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.header-box h1 , .header-box p{
+		margin: 15px;
+		font-size: 13vw;
 	}
 }
