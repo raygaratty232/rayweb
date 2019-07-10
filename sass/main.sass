@@ -2,20 +2,18 @@ body,h1,h2,h3,p,ul
 	font-family: 'DM Sans', sans-serif
 	padding: 0
 	margin: 0
- 	
-p
-	font-size: 50px
-
-
+	box-sizing:border-box
 a , button , input
 	text-decoration: none
 	display: block
+	cursor: pointer
 
 li
 	list-style: none
 
 .overflow
 	overflow: hidden
+
 .header
 	position: relative
 	background-image: url('../images/bg-head.jpg')
@@ -46,17 +44,17 @@ li
 	margin-top: 20px
 .btn-menu
 	position: fixed
-	left: -100px
+	left: -50px
 	background-color: #000
-	width: 100px
-	height: 100px
+	width: 50px
+	height: 50px
 	border-radius: 10px 0 0 10px
 	cursor: pointer
 	z-index: 100
 
 .top-stick , .mid-stick , .low-stick
 	height: 4px
-	width: 80px
+	width: 40px
 	background-color: #fff
 	left: 0
 	right: 0
@@ -65,19 +63,19 @@ li
 	transition: 0.7s
 
 .top-stick
-	top: 20px
+	top: 10px
 
 .mid-stick
-	top: 50px
+	top: 23px
 
 .low-stick
-	top: 80px
+	top: 39px
 .nav
 	position: relative
 	height: 100vh
 .menu
 	width: 50%
-	height: 100vh
+	min-height: 100vh
 	background-color: #000
 	transform: translateX(100%)
 	transition: 0.7s
@@ -115,14 +113,182 @@ li
 	transform: translateX(0%)
 
 .close-top
-	top: 50px
+	top: 23px
 	transform: rotate(50deg)
 .close-mid
 	display: none
 .close-low
-	top: 50px
+	top: 23px
 	transform: rotate(130deg)
 
 .about
-	height: 100vh
-	background-color: #cdcdcd
+	// height: 100vh
+	background-color: #222325
+	padding: 40px 0
+.about-title
+	font-size: 50px
+	text-transform: uppercase
+	text-align: center
+	margin: 20px 0
+	position: relative
+	color: #fff
+	&:after
+		content: ''
+		display: block
+		height: 3px
+		width: 40%
+		left: 0
+		right: 0
+		top: 80px
+		margin: auto
+		position: absolute
+		background-color: red
+.about-container
+	max-width: 1200px
+	margin: auto
+	display: flex
+	padding: 20px
+	flex-wrap: wrap
+	perspective: 2000px
+	transform-style: preserve-3d
+
+.about-block
+	transition: 1s
+	width: 45%
+	background-color: #fff
+	margin: 2% 1%
+	padding: 20px 10px
+	min-height: 360px
+	justify-content: space-around
+	border-radius: 20px
+	box-shadow: 0px 0px 10px 5px #000
+	transform: rotateY(30deg)
+	&:hover
+		transform: rotateY(0deg)
+	&:nth-child(even)
+		transform: rotateY(-30deg)
+	&:hover:nth-child(even)
+		transform: rotateY(0deg)
+	ul  li
+		font-size: 20px
+		margin: 10px 0
+		padding-left: 10px
+		&:before
+			content: ''
+			display: block
+			width: 10px 
+			height: 10px
+			background-color: red
+			float: left
+			margin: 9px
+			border-radius: 2px
+	h2
+		font-size: 25px
+		margin: 10px 0
+		padding-left: 20px
+		border-bottom: 2px solid red
+	h3
+		font-size: 23px
+	p
+		font-size: 23px
+		margin: 15px 0
+
+.portfolio-container
+	max-width: 80%
+	margin: auto
+	display: flex
+	flex-wrap: wrap
+
+.portfolio-title
+	text-align: center
+	font-size: 50px
+	margin: 30px 0
+	text-transform: uppercase
+	position: relative
+	&:after
+		content: ''
+		display: block
+		height: 3px
+		width: 40%
+		left: 0
+		right: 0
+		top: 80px
+		margin: auto
+		position: absolute
+		background-color: red
+
+.portfolio-slider-box
+	width: 47%
+	height: 50%
+	margin: 20px 10px
+	img
+		width: 100%
+
+.portfolio-slider-item
+	height: 100%
+	a , img
+		height: inherit
+
+.contacts
+	height: 70vh
+	background-color: #222325
+	margin-top: 3px
+	
+
+.contacts-container
+	max-width: 1220px
+	margin: auto
+	display: flex
+	justify-content: space-around
+	height: 100%
+	align-items: center
+	background-color: rgba(0,0,0,0.5)
+	box-shadow: 0px 10px 5px 10px
+
+.form-title
+	font-size: 25px
+	color: #fff
+
+
+.form-box
+	width: 30%
+	label
+		width: 50%
+		margin: 20px
+	p
+		font-size: 20px
+		color: #fff
+		margin: 10px 0
+	button
+		width: 100%
+		height: 50px
+		font-size: 20px
+		background-color: #fff
+		transition: 0.5s
+		border: none
+		border-radius: 20px
+		&:hover
+			background-color: rgba(0, 0, 0, 0.5)
+			color: #fff
+	input
+		width: 100%
+		height: 40px
+		padding-left: 20px
+		box-sizing: border-box
+		border-radius: 20px
+		border: 1px solid
+		font-size: 18px
+		transition: 0.6s
+		&:focus
+			box-shadow: 0px 0px 25px 13px
+
+.own-info 
+		a
+			font-size: 40px
+			color: #fff
+
+		p
+			font-size: 50px
+			color: #fff
+			font-weight: bold
+			margin: 20px 0

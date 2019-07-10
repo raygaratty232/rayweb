@@ -11,9 +11,8 @@ btnMenu.onclick = function(){
 	midStick.classList.toggle('close-mid')
 	lowStick.classList.toggle('close-low')
 }
-// window.onclick = function(){
-// 	menu.classList.remove('active-menu')
-// 	topStick.classList.remove('close-top')
-// 	midStick.classList.remove('close-mid')
-// 	lowStick.classList.remove('close-low')
-// }
+$(document).ready(function(){
+	$('portfolio-slider').slick({
+		
+	})
+})

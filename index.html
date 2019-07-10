@@ -7,10 +7,12 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="libs/slick-slider/slick.css">
+	<link rel="stylesheet" href="libs/slick-slider/slick-theme.css">
 </head>
 <body>
 	<div class="overflow">
-		<header class="header">
+		<header class="header" id="main">
 			<nav class="nav">
 				<ul class="menu">
 					<div class="btn-menu">
@@ -18,10 +20,10 @@
 						<div class="mid-stick"></div>
 						<div class="low-stick"></div>
 					</div>
-					<li><a href="#">main</a></li>
-					<li><a href="#">about</a></li>
-					<li><a href="#">portfolio</a></li>
-					<li><a href="#">contacts</a></li>
+					<li><a href="#main">Главная</a></li>
+					<li><a href="#about">о себе</a></li>
+					<li><a href="#portfolio">портфолио</a></li>
+					<li><a href="#contact">контакты</a></li>
 				</ul>
 			</nav>
 			<div class="header-box">
@@ -29,12 +31,137 @@
 				<p>Разработчик сайтов</p>
 			</div>
 		</header>
-		<div class="about">
-			
+		<main>
+			<div class="about" id="about">
+			<h2 class="about-title">о себе</h2>
+			<div class="about-container">
+				<div class="about-block">
+					<h2>Навыки:</h2>
+					<ul>
+						<li>Знание HTML‚ CSS (HTML5 и CSS3);</li>
+						<li>Базовые знание java-script;</li>
+						<li>Блочная, кроссбраузерная верстка;</li>
+						<li>Базовые знания Javascript;</li>
+						<li>Работа с библиотеками jQuery;</li>
+						<li>Адаптивная верстка;</li>
+					</ul>
+				</div>
+				<div class="about-block">
+					<h2>Личные навыки:</h2>
+					<ul>
+						<li>Усидчивый;</li>
+						<li>Ответственный;</li>
+						<li>Постоянно учусь, развиваюсь;</li>
+						<li>Коммуникабельный;</li>
+					</ul>
+				</div>
+				<div class="about-block">
+					<h2>Место работы:</h2>
+					<p>SAFRASOFT "Туровец Е.А., ФЛП".</p>
+					<h3>Время работы:</h3>
+					<p>6 месяцев.</p>
+					<h3>Обязаности:</h3>
+					<ul>
+						<li>Разработка адаптивных сайтов по PSD макету;</li>
+						<li>Доработка существующих сайтов;</li>
+						<li>Правки сайтов;</li>
+					</ul>
+				</div>
+				<div class="about-block">
+					<h2>Место работы:</h2>
+					<p>HTML контент-менеджер.</p>
+					<h3>Время работы:</h3>
+					<p>6 месяцев.</p>
+					<h3>Обязаности:</h3>
+					<ul>
+						<li>Верстки макета с нуля;</li>
+						<li>Доработка существующих сайтов;</li>	
+						<li>Правки сайтов;</li>	
+						<li>Наполнение сайтов различным контентом;</li>	
+					</ul>
+				</div>	
+
+			</div>
 		</div>
-	</div>
+			<div class="portfolio" id="portfolio">
+			<h2 class="portfolio-title">Мои работы</h2>
+			<div class="portfolio-container">
+					<div class="portfolio-slider-box">
+						<div class="portfolio-slider-item">
+							<a href="http://uniqueschool.com.ua/">
+								<img src="images/portfolio-img-1.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="portfolio-slider-box">
+						<div class="portfolio-slider-item">
+							<a href="https://reklion.ru/">
+								<img src="images/portfolio-img-2.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="portfolio-slider-box">
+						<div class="portfolio-slider-item">
+							<a href="https://raygaratty232.github.io/medic/">
+								<img src="images/portfolio-img-4.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="portfolio-slider-box">
+						<div class="portfolio-slider-item">
+							<a href="https://raygaratty232.github.io/decoblog/">
+								<img src="images/portfolio-img-5.png" alt="">
+							</a>
+						</div>
+					</div>
+			</div>
+			</div>
+		</main>
+	<footer>
+		<div class="contacts" id="contact">
+			<div class="contacts-container">
+				<div class="form-box">
+					<h2 class="form-title">Напишите мне</h2>
+					<form>
+						<label>
+							<p>Имя</p>
+							<input type="name" placeholder="Ваше имя">
+						</label>
+						<label>
+							<p>Почта</p>
+							<input type="name" placeholder="Ваша почта">
+						</label>
+						<label>
+							<p>Номер телефона</p>
+							<input type="phone" placeholder="Ваш номер телефона">
+						</label>
+						<button>Отправить</button>
+					</form>
+				</div>
+				<div class="own-info">
+					<p>мой телефон:</p>
+					<a href="tel:+380502414023">+380502414023</a>
+					<p>моя почта:</p>
+					<a href="mailto:garatty.232@gmail.com">garatty.232@gmail.com</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</div>
 
 
+<!--https://raygaratty232.github.io/tatooAWZ/
+	https://reklion.ru/
+	http://uniqueschool.com.ua/
+	https://raygaratty232.github.io/medic/
+	https://raygaratty232.github.io/decoblog/
+-->
+<script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+<script src="libs/slick-slider/slick.min.js"></script>
 <script src="scripts/scripts.js"></script>
 </body>
 </html>
