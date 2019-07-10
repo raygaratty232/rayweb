@@ -234,8 +234,13 @@ li {
 
 .portfolio-slider-item {
   height: 100%; }
+  .portfolio-slider-item a {
+    transition: 0.3s;
+    border: 1px solid #ddd; }
   .portfolio-slider-item a, .portfolio-slider-item img {
     height: inherit; }
+  .portfolio-slider-item a:hover {
+    transform: scale(1.1, 1.1); }
 
 .contacts {
   height: 70vh;

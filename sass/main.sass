@@ -226,8 +226,15 @@ li
 
 .portfolio-slider-item
 	height: 100%
+	a
+		transition: 0.3s
+		border: 1px solid #ddd
 	a , img
 		height: inherit
+		
+	& a:hover
+		transform: scale(1.1 , 1.1)
+		
 
 .contacts
 	height: 70vh
