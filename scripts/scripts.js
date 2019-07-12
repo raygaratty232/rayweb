@@ -4,6 +4,8 @@ window.onload = function(){
 	var inp_phone = document.querySelector('input[name=phone]')
 	var inp_name = document.querySelector('input[name=name]')
 	var out = document.querySelector('.out')
+	
+
 
 
 	var sendBtn = document.querySelector('.send-btn');
@@ -51,5 +53,3 @@ window.onload = function(){
 	}
 
 }
-
-

@@ -33,7 +33,7 @@ $mail->Port       = 465;
 $mail->Username   = "garatty.232@gmail.com";
 $mail->Password   = "141190ray";
 
-$mail->From = 'https://raygaratty232.github.io/rayweb/';
+$mail->From = 'rayweb.zzz.com.ua';
 $mail->Subject = 'Заказ с Вашего сайта';
 $mail->addAddress($to);
 $mail->Body = $message;
