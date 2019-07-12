@@ -79,8 +79,8 @@ li {
   height: 100vh; }
 
 .menu {
-  width: 35%;
-  height: 100vh;
+  width: 50%;
+  min-height: 100vh;
   background-color: #000;
   transform: translateX(100%);
   transition: 0.7s;
@@ -95,7 +95,7 @@ li {
       font-size: 35px;
       text-transform: uppercase;
       color: #fff;
-      line-height: 130px;
+      line-height: 200px;
       position: relative; }
 
 .menu a:before {
